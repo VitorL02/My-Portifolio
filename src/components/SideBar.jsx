@@ -1,7 +1,10 @@
 import Avatar from '../img/Vitor.jpg';
+import SocialNetworks from './SocialNetworks';
+import ContactInfos from './ContactInfos';
+
 import '../styles/components/sidebar.sass'
 import '../box.css'
-import SocialNetworks from './SocialNetworks';
+
 
 const SideBar = () => {
     return (
@@ -9,6 +12,7 @@ const SideBar = () => {
             <img src={Avatar} alt="Vitor Lucas Crispim" />
             <p className="title elevation">Junior Developer</p>
             <SocialNetworks />
+            <ContactInfos />
             <a href="" className="btn elevation">
                 Download do Curriculo
             </a>

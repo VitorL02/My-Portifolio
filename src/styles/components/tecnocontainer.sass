@@ -1,0 +1,62 @@
+@use '../variables'
+@use '../mixins'
+
+.tecno-container
+    margin-bottom: 1rem
+
+    .tecno-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+    .tecno-card
+        @include mixins.center
+        gap: 1rem
+        padding: 1rem
+        border: 1px solid #333
+        width: 45%
+        border-radius: variables.$card-border-radius
+
+        h3
+            color: variables.$text-color
+            margin-bottom: 1rem
+        svg
+            font-size: 4rem
+
+    #html
+        svg
+            color: #E44D26
+    #css
+        svg
+            color: #1572b6
+
+    #nodejs
+        svg
+            color: #83CD29
+    #javascript
+        svg
+            color: #F0DB4F
+    #dart
+        svg
+            color: #1572b6
+    #bitbucket
+        svg
+            color: #1572b6
+    #bootstrap
+        svg
+            color: #1572b6
+    #angular
+        svg
+            color: #E44D26
+    #sass
+        svg
+            color: #FF007F
+    #mysql
+        svg
+            color: #00618A
+    #php
+        svg
+            color: #1572b6
+    #react
+        svg
+            color: #61DAFB
