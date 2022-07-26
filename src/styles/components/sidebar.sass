@@ -9,6 +9,7 @@
     flex-direction: column
     tex-align: center
     position: relative
+    height: 900px
     padding: 3rem 0
 
     img
@@ -26,3 +27,10 @@
 
     .btn
         @include mixins.btn
+
+    @media screen and (max-width:1040px)
+        img
+            max-width: 45%
+            border-radius: variables.$container-border-radius
+            position: absolute
+            top: -7rem
